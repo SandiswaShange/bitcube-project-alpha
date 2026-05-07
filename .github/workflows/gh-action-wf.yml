@@ -1,0 +1,21 @@
+#name for my ci
+name: assignment 1.3 CI workflow
+
+#what it shoild run on and on which action
+on:
+ push: #what event it should run on
+  branches: [main]
+
+#what jobs it should do when it runs
+jobs:
+    project-alpha: #job name that appears on the user end
+        runs-on: ubuntu-latest #what OS it should run on. even Windows is fine
+
+        steps: #what steps it should do when it runs
+
+        #step 1
+        - name: Checkout code #name can have spaces (introduce yourself)
+          uses: actions/checkout@v4 #what action it should use (checkout code)
+        #step 2
+        - name: Message for user #name of the step
+          run: echo "Hello, GitHub user. Welcome to my Workflow!" #what it should do (run an echo script)
