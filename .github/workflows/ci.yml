@@ -1,0 +1,22 @@
+#name of your workflow that will be displayed in the Github actions tab
+name: ci demo
+
+#when should the workflow run (trigger) on: push: branches[] pull_requests:
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+#what work should be done when the workflow runs
+jobs:
+  demo-job:
+    runs-on: ubuntu-latest
+
+    steps:
+    #step 1
+      - name: Checkout code
+        uses: actions/checkout@v2
+    #step2
+      - name: Run a one-line script
+        run: echo "Hello, GitHub workflow!"
