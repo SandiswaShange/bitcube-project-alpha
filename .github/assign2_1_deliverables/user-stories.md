@@ -7,7 +7,7 @@
 - [ ] Given I select an available room, When I confirm the booking, Then the booking must be saved successfully
 - [ ] Given that a room is already booked, When I try to book it for the same timeslot, Then the system must prevent booking at that moment.    
 ### Story Points:
-5
+8
 ### Priority:
 High
 ### Dependencies:
