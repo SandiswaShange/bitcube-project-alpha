@@ -1,0 +1,5 @@
+# GitHub Actions Workflow
+## Explanation
+The automation created in this project uses GitHub Actions to automatically run a workflow whenever changes are pushed to the `main` branch of the repository. The workflow file, gh-action-wf.yml, is stored inside the .github/workflows directory.
+The workflow contains a job called project-alpha that runs on an Ubuntu virtual machine (ubuntu-latest). Inside the job, there are automated steps that execute when the workflow starts. The first step uses actions/checkout@v4 to copy the repository files into the workflow environment. The second step runs an echo command that prints the message: “Hello, GitHub user. Welcome to my Workflow!”
+This automation is useful because it allows tasks to run automatically without manual intervention. Every time code is pushed to the repository, GitHub Actions checks and executes the workflow immediately. This helps developers confirm that workflows are working correctly, improves consistency, and supports Continuous Integration (CI) practices.
