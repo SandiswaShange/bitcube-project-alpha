@@ -1,4 +1,4 @@
-    # Sprint 1 Mid-Sprint checkpoint
+# Sprint 1 Mid-Sprint checkpoint
 Date [12 May 2026]
 
 ## Progress Snapshot
